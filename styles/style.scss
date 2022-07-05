@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf) format("ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Medium.ttf) format("ttf");
+    font-style: normal;
+}
+
+.txt-regular {
+    font-family: "Roboto" !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+.txt-medium {
+    font-family: "Roboto" !important;
+    font-style: normal !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.languages-btn {
+    background-color: transparent;
+}
+
+.mr-btn {
+    font-size: 16px;
+    line-height: 22px;
+    color: #7453E8;
+
+    background-color: #E5E2FF;
+    border-radius: 100px;
+    padding: 6px 24px;
+    margin: 0 0 0 16px;
+}
+
+.order-btn {
+    max-width: 311px;
+    width: 100%;
+    padding: 10px;
+    background: #7453E8;
+    border-radius: 100px;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #F0F2F3;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.home {
+    padding: 24px 0;
+
+    &-header {
+        max-width: 1040px;
+        width: 100%;
+        height: 250px;
+        background-color: transparent;
+        background-image: url(../imgs/homeHeaderBackground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto 73px;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            &:first-child {
+                max-width: 328px;
+                width: 100%;
+            }
+
+            &-logo {
+                &-wrp {
+                    margin: 0 0 16px;
+                }
+            }
+
+            &-right {
+                &-btns {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+
+            &-btns {
+                display: flex;
+                justify-content: space-between;
+
+                &-item.table {
+                    background-color: transparent;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #F0F2F3;
+                }
+            }
+
+            &-txt {
+                color: #F0F2F3;
+                font-size: 16px;
+                line-height: 22px;
+                margin: 0 0 8px;
+                display: flex;
+                align-items: center;
+
+                & svg {
+                    margin: 0 6px 0 0;
+                    width: 20px;
+                }
+
+                &-item {
+                    &.hours {
+                        &.open {
+                            color: #03BB16;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &-content {
+        max-width: 1040px;
+        width: 100%;
+        margin: 0 auto;
+
+        &-item {
+            margin: 0 0 32px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+
+            &-info {
+                margin: 0 0 16px;
+
+                &-title {
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: #F0F2F3;
+                    margin: 0 0 4px;
+                }
+
+                &-subtitle {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #f0f2f3a6;
+                    max-width: 331px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &-goods {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &-item {
+                max-width: 331px;
+                width: 100%;
+                padding: 8px 8px 8px 12px;
+                background-color: #1C1C1C;
+                display: flex;
+                border-radius: 16px;
+                margin: 0 0 24px;
+
+                &-info {
+                    margin: 0 8px 0 0;
+                }
+
+                &-title {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #F0F2F3;
+                    margin: 0 0 4px;
+                }
+
+                &-subtitle {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #f0f2f3a6;
+                    margin: 0 0 16px;
+                }
+
+                &-price {
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #F0F2F3;
+                }
+
+                &-img {
+                    &-wrp {
+                        max-width: 127px;
+                        width: 100%;
+                    }
+
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
